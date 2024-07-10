@@ -2,6 +2,7 @@ const morgan = require('morgan');
 const express = require('express');
 const app = express();
 const pokemon = require('./routes/pokemon');
+const user = require('./routes/user');
 
         //Si ponemos llaves, pedimos ese solo elemnento que se identifica como el arreglo que tiene
 /*
