@@ -7,7 +7,7 @@ const pokemon = require('./routes/pokemon');
 const user = require('./routes/user');
 //Middleware
 const auth = require('./middleware/auth');
-const notFound = require('./middlewre/notFound');
+const notFound = require('./middleware/notFound');
 const index = require('./middleware/index')
 
         //Si ponemos llaves, pedimos ese solo elemnento que se identifica como el arreglo que tiene
