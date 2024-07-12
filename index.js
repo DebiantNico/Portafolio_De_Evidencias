@@ -8,7 +8,8 @@ const user = require('./routes/user');
 //Middleware
 const auth = require('./middleware/auth');
 const notFound = require('./middleware/notFound');
-const index = require('./middleware/index')
+const index = require('./middleware/index');
+const cors = require('./middleware/cors');
 
         //Si ponemos llaves, pedimos ese solo elemnento que se identifica como el arreglo que tiene
 /*
@@ -21,6 +22,7 @@ const index = require('./middleware/index')
  Son soportados por express
  */
 //Añadir middleware, capas que le harán o modificaciones o revisar datos
+app.use(cors);
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}))
